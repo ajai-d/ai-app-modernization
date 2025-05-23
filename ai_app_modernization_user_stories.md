@@ -94,11 +94,36 @@
 4. Implement modern design patterns
 5. Review and refine the generated UI code
 
+### User Story 2.5: Application Containerization
+**As a** DevOps Engineer  
+**I want to** containerize the application using GitHub Copilot  
+**So that** it can be deployed consistently across environments
+
+**Technical Steps:**
+1. Create prompts for GitHub Copilot to generate Dockerfiles
+2. Generate Dockerfile for the application
+3. Generate Docker Compose files if needed
+4. Test container builds locally
+5. Optimize container configurations
+
+### User Story 2.6: Local Environment Testing
+**As a** Developer  
+**I want to** test the containerized application in a local environment  
+**So that** I can validate functionality before deploying to Azure
+
+**Technical Steps:**
+1. Build and run container images locally
+2. Configure environment variables for local development
+3. Create Docker Compose setup for multi-container testing
+4. Implement mock services for external dependencies
+5. Execute unit tests in the containerized environment
+6. Create automated validation scripts for local environment testing
+
 ## Epic 3: Test Generation and Validation
 
-### User Story 3.1: Unit Test Generation
+### User Story 3.1: Unit Test Generation and Execution
 **As a** Developer  
-**I want to** generate unit tests using GitHub Copilot  
+**I want to** generate and execute unit tests using GitHub Copilot
 **So that** we have comprehensive test coverage
 
 **Technical Steps:**
@@ -106,45 +131,10 @@
 2. Generate tests for model classes
 3. Generate tests for service layer components
 4. Generate tests for controllers and endpoints
-5. Review and refine the generated tests
+5. Execute unit tests in local environment
+6. Review and refine the generated tests
 
-### User Story 3.2: Local Testing Environment Setup
-**As a** Developer  
-**I want to** set up a local testing environment  
-**So that** I can validate functionality before integration testing
-
-**Technical Steps:**
-1. Configure local environment with necessary dependencies
-2. Set up mock services for external dependencies
-3. Configure environment variables for local testing
-4. Create test data sets for local validation
-5. Set up automated local test execution scripts
-
-### User Story 3.3: Integration Test Generation
-**As a** QA Engineer  
-**I want to** generate integration tests using GitHub Copilot  
-**So that** we can verify component interactions
-
-**Technical Steps:**
-1. Create prompts for GitHub Copilot to generate integration tests
-2. Generate tests for API endpoints
-3. Generate tests for service interactions
-4. Generate tests for database operations
-5. Review and refine the generated integration tests
-
-### User Story 3.4: Test Case Validation
-**As a** QA Engineer  
-**I want to** validate the generated test cases  
-**So that** they accurately test the application requirements
-
-**Technical Steps:**
-1. Review test coverage against requirements
-2. Identify gaps in test coverage
-3. Add missing test cases
-4. Validate test execution and results
-5. Document test coverage metrics
-
-### User Story 3.5: Functional Test Generation from PRD
+### User Story 3.2: Functional Test Generation from PRD
 **As a** QA Engineer  
 **I want to** generate functional tests directly from the PRD using GitHub Copilot  
 **So that** our tests accurately validate the application against business requirements
@@ -156,7 +146,19 @@
 4. Generate acceptance criteria validation tests
 5. Implement UI-driven functional tests for critical user journeys
 
-### User Story 3.6: Test Environment Deployment
+### User Story 3.3: Test Case Validation
+**As a** QA Engineer  
+**I want to** validate the generated test cases  
+**So that** they accurately test the application requirements
+
+**Technical Steps:**
+1. Review test coverage against requirements
+2. Identify gaps in test coverage
+3. Add missing test cases
+4. Validate test execution and results
+5. Document test coverage metrics
+
+### User Story 3.4: Test Environment Deployment
 **As a** DevOps Engineer  
 **I want to** deploy the modernized application to a dedicated test environment  
 **So that** we can execute functional and automated tests against it
@@ -169,7 +171,7 @@
 5. Configure monitoring and logging for test environment
 6. Implement test environment cleanup and reset capabilities
 
-### User Story 3.7: Automation Test Script Generation
+### User Story 3.5: Automation Test Script Generation
 **As a** QA Engineer  
 **I want to** generate automated test scripts using GitHub Copilot  
 **So that** we can efficiently execute tests with minimal manual intervention
@@ -182,7 +184,7 @@
 5. Implement cross-browser/device testing capabilities
 6. Generate mocks and stubs for external dependencies
 
-### User Story 3.8: Automated Test Script Execution
+### User Story 3.6: Automated Test Script Execution
 **As a** QA Engineer  
 **I want to** execute the generated automated test scripts against the modernized application  
 **So that** we can verify the application meets the requirements with consistent, repeatable tests
@@ -195,7 +197,7 @@
 5. Establish CI integration for automated regression testing
 6. Implement test result analytics for identifying patterns in failures
 
-### User Story 3.9: Performance Testing
+### User Story 3.7: Performance Testing
 **As a** QA Engineer  
 **I want to** generate and execute performance tests using GitHub Copilot  
 **So that** we can verify the modernized application meets performance requirements
@@ -257,34 +259,9 @@
 4. Conduct penetration testing on the modernized application
 5. Document security findings and remediation steps
 
-## Epic 5: Containerization and Infrastructure as Code Deployment
+## Epic 5: Infrastructure as Code Deployment
 
-### User Story 5.1: Application Dockerization
-**As a** DevOps Engineer  
-**I want to** containerize the application using GitHub Copilot  
-**So that** it can be deployed consistently across environments
-
-**Technical Steps:**
-1. Create prompts for GitHub Copilot to generate Dockerfiles
-2. Generate Dockerfile for the application
-3. Generate Docker Compose files if needed
-4. Test container builds locally
-5. Optimize container configurations
-
-### User Story 5.2: Local Environment Testing
-**As a** Developer  
-**I want to** test the containerized application in a local environment  
-**So that** I can validate functionality before deploying to Azure
-
-**Technical Steps:**
-1. Build and run container images locally
-2. Configure environment variables for local development
-3. Create Docker Compose setup for multi-container testing
-4. Implement mock services for external dependencies
-5. Execute unit tests in the containerized environment
-6. Create automated validation scripts for local environment testing
-
-### User Story 5.3: Azure Landing Zone Implementation
+### User Story 5.1: Azure Landing Zone Implementation
 **As a** Cloud Engineer  
 **I want to** create IaC scripts for a secure Azure environment  
 **So that** we can deploy our application following best practices
@@ -296,7 +273,7 @@
 4. Create monitoring and logging infrastructure
 5. Validate against Azure Well-Architected Framework
 
-### User Story 5.4: Resource Provisioning with IaC
+### User Story 5.2: Resource Provisioning with IaC
 **As a** Cloud Engineer  
 **I want to** provision Azure resources using Infrastructure as Code  
 **So that** we have consistent environments
@@ -307,7 +284,7 @@
 3. Set up monitoring and storage resources
 4. Implement environment-specific parameters
 
-### User Story 5.5: Azure Developer CLI Integration
+### User Story 5.3: Azure Developer CLI Integration
 **As a** DevOps Engineer  
 **I want to** set up Azure Developer CLI (azd) for the project  
 **So that** we can streamline the development and deployment workflow
@@ -319,7 +296,7 @@
 4. Set up service principal authentication for azd
 5. Document azd commands for the team
 
-### User Story 5.6: Manual Deployment with azd
+### User Story 5.4: Manual Deployment with azd
 **As a** Cloud Engineer  
 **I want to** use Azure Developer CLI for manual deployments  
 **So that** we can validate our deployment process before automating it
@@ -331,7 +308,7 @@
 4. Create verification steps for post-deployment validation
 5. Implement rollback procedures for manual deployments
 
-### User Story 5.7: Application Deployment
+### User Story 5.5: Application Deployment
 **As a** DevOps Engineer  
 **I want to** automate application deployment  
 **So that** we have a reliable delivery process
@@ -343,7 +320,7 @@
 4. Implement blue-green deployment strategy in IaC
 5. Define rollback mechanisms in deployment scripts
 
-### User Story 5.8: Environment Configuration Validation
+### User Story 5.6: Environment Configuration Validation
 **As a** Cloud Engineer  
 **I want to** validate IaC deployments against best practices and security standards  
 **So that** our Azure environments are secure, optimized, and compliant
