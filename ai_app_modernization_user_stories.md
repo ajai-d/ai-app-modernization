@@ -2,7 +2,7 @@
 
 ## Epic 1: Reverse Engineering with Crowdbotics
 
-### User Story 1.1: Source Code Repository Setup
+### User Story 1.1: Source Code Repository Setup [Ajai]
 **As a** DevOps Engineer  
 **I want to** set up a GitHub repository for the legacy .NET application  
 **So that** we have a centralized location for the code modernization process
