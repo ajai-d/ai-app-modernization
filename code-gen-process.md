@@ -247,7 +247,7 @@
 
 ---
 
-### **4. Initial Modernization**
+### **4. Iterative Code Generation and Function Validation**
 1. **Code Generation**:
    - Use the detailed intermediate specs as input for AI-driven code generation.
    - Generate code for each module/feature based on the natural language descriptions.
