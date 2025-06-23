@@ -255,26 +255,11 @@
 2. **Initial Validation**:
    - Deploy the generated code and run basic functionality tests.
 
----
-
-### **5. Iterative Refinement Loop**
-#### **Step 5.1: Runtime Discrepancy Detection**
-   - Compare old and new apps at runtime using automated tools.
-
-#### **Step 5.2: Root Cause Analysis**
-   - Analyze discrepancies and trace them back to specific specs or code.
-
-#### **Step 5.3: Spec Updates**
-   - **Update the natural language descriptions** in the relevant intermediate specs.
-   - Refine feature descriptions, workflows, or technical details as needed.
-
-#### **Step 5.4: Targeted Code Regeneration**
-   - Regenerate code using the updated spec descriptions.
-   - Focus on specific modules or features that need changes.
-   - Changes are small and atomic, with test runs after each change
-
-#### **Step 5.5: Validation**
-   - Test the updated code and check for parity improvements.
+3. **Iterative Refinement Loop**
+   - Compare old and new apps at runtime using automated tools to identify discrepancies
+   - Perform root cause analysis to trace discrepancies back to specific specs or code
+   - Update the natural language descriptions in the relevant intermediate specs. Refine feature descriptions, workflows, or technical details as needed
+   - Performed targeted code regeneration using updated spec descriptions. Focus on specific modules or features that need changes. Changes are small and atomic, with test runs after each change
 
 #### Note on Long-Running Iterations:
 Copilot should be instructed to detect long-running iterations and pivot to a new approach with these principles
