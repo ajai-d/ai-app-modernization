@@ -1,10 +1,5 @@
 ### **1. Initialization**
-1. **Input Gathering**:
-   - Load the PRD, old codebase, and commit history.
-   - Parse any existing documentation or architectural notes.
-   - Load test plans and any existing test results.
-
-2. **Environment Setup**:
+1. **Environment Setup**:
    - Set up analysis tools for codebase parsing and documentation generation.
    - Configure observability tools for later runtime monitoring.
 
@@ -149,7 +144,6 @@
 
 #### **Step 2.2: Functional Spec Generation**
    - Map PRD requirements to specific features and workflows.
-   - Analyze existing code to understand current feature implementations.
    - **Output**: Detailed natural language descriptions including:
      - Individual feature descriptions with user stories
      - Step-by-step workflow descriptions
@@ -158,8 +152,9 @@
      - Input/output specifications
 
 #### **Step 2.3: UI/UX Spec Generation**
-   - Analyze existing UI patterns and user interactions.
    - Map PRD requirements to UI components and user flows.
+   - If the PRD contains UI/UX requirements or points to assets, use them. Otherwise generate your own.
+   - Ensure latest UX patterns and technologies are utilized.
    - **Output**: Natural language descriptions of:
      - Page layouts and component hierarchies
      - User interaction patterns and behaviors
@@ -179,8 +174,7 @@
      - Testing strategy and approaches
 
 #### **Step 2.5: Style Guide Generation**
-   - Extract existing coding patterns and conventions from the old codebase.
-   - Define modern coding standards and best practices.
+   - If the PRD contains a reference to coding standards, use those. Otherwise define coding standards based on modern patterns and best practices.
    - **Output**: Natural language descriptions of:
      - Code organization and file structure
      - Naming conventions for variables, functions, classes
@@ -189,7 +183,6 @@
      - Documentation standards
 
 #### **Step 2.6: Test Plan Generation**
-   - Analyze existing tests and identify coverage gaps.
    - Map features to testing requirements.
    - **Output**: Detailed descriptions of:
      - Unit test requirements for each component
@@ -209,7 +202,6 @@
      - Debugging and troubleshooting workflows
 
 #### **Step 2.8: API Contract Generation**
-   - Extract existing API patterns from the codebase.
    - Generate OpenAPI specifications for new APIs.
    - **Output**: 
      - OpenAPI/Swagger specifications
